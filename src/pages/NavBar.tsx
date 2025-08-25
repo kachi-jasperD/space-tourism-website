@@ -4,20 +4,24 @@ import logo from "/assets/shared/logo.svg";
 const NavBar = () => {
   return (
     // <div className="relative z-10">
-    <div className="p-2 flex justify-between gap-2 mr-7">
-      <img src={logo} alt="Logo" className="border border-white rounded-full mt-2" />
+    <div className="p-2 flex justify-between gap-2 mr-7 font-barlow-condensed">
+      <img
+        src={logo}
+        alt="Logo"
+        className="border border-white rounded-full mt-2"
+      />
       <div className="hidden md:block space-x-10 pt-5 text-white">
         <Link to="/" className="[&.active]:font-bold">
-          00 Home
+          <span className="mr-2">00</span> Home
         </Link>
         <Link to="/destination" className="[&.active]:font-bold">
-          01 Destination
+          <span className="mr-2">01</span> Destination
         </Link>
         <Link to="/crew" className="[&.active]:font-bold">
-          02 Crew
+          <span className="mr-2">02</span> Crew
         </Link>
         <Link to="/technology" className="[&.active]:font-bold">
-          03 Technology
+          <span className="mr-2">03</span> Technology
         </Link>
       </div>
     </div>
