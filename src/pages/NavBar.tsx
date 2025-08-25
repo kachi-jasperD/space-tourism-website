@@ -8,7 +8,7 @@ const NavBar = () => {
       <img
         src={logo}
         alt="Logo"
-        className="border border-white rounded-full mt-2"
+        className="border border-white rounded-full mt-2 ml-2"
       />
       <div className="hidden md:block space-x-10 pt-5 text-white">
         <Link to="/" className="[&.active]:font-bold">
