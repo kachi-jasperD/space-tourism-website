@@ -1,3 +1,4 @@
+import SharedBackground from "@/pages/SharedBackground";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/technology")({
@@ -5,5 +6,10 @@ export const Route = createFileRoute("/technology")({
 });
 
 function Technology() {
-  return <div className="text-white">Hello "/technology"!</div>;
+  return (
+    <div>
+      <SharedBackground />
+      <p className="text-white">Hi technology Page</p>
+    </div>
+  );
 }
