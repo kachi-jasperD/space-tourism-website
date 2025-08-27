@@ -5,7 +5,8 @@ const DestinationCategories = ({
   activeIndex,
 }) => {
   return (
-    <div className="text-white flex gap-10 absolute top-110 left-10">
+    <div className="absolute top-120 left-1/2 transform -translate-x-1/2 flex gap-10 text-white">
+      {/* <div className="text-white flex gap-10 absolute top-110 left-10 md:text-center"> */}
       {categories.map((category, index) => {
         const isActive = index === activeIndex;
 
