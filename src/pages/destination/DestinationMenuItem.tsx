@@ -4,9 +4,6 @@ const DestinationMenuItem = ({ id, title, info, distance, time, image }) => {
       className="lg:hidden text-white mt-15 flex flex-col justify-center items-center gap-10"
       key={id}
     >
-      {/* <p className="font-barlow-condensed ">
-        <span className="mr-2 text-[#53555f]">01</span> PICK YOUR DESTINATION
-      </p> */}
       <img
         src={image}
         alt="Image of the Moon"
@@ -16,13 +13,18 @@ const DestinationMenuItem = ({ id, title, info, distance, time, image }) => {
       <p className="font-barlow-regular tracking-wide text-center sm:text-wrap sm:w-[579px] text-[var(--primary-color)] px-4">
         {info}
       </p>
-      <div>
-        <p>AVG. DISTANCE</p>
-        <p>{distance}</p>
+      <hr className="w-85 border-t-2 border-white/25" />
+      <div className="text-center">
+        <p className="text-[var(--primary-color)] font-barlow-condensed tracking-widest">
+          AVG. DISTANCE
+        </p>
+        <p className="text-4xl mt-3 font-bellefair">{distance}</p>
       </div>
-      <div>
-        <p>Est. travel time</p>
-        <p>{time}</p>
+      <div className="text-center mb-5">
+        <p className="text-[var(--primary-color)] font-barlow-condensed tracking-widest">
+          EST. TRAVEL TIME
+        </p>
+        <p className="inline-block text-4xl mt-3 font-bellefair">{time}</p>
       </div>
     </div>
   );

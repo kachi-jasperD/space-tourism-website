@@ -17,11 +17,6 @@ function Destination() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const filterItems = (category: string) => {
-    // if(category==="moon"){
-    //   setMenuItems(newItems);
-    //   return
-    // }
-
     const newItems = data.filter((item) => item.category === category);
     if (category === "moon") {
       setMenuItems(newItems);
@@ -29,7 +24,6 @@ function Destination() {
     }
     setMenuItems(newItems);
   };
-
 
   const handleIsActive = (index: number) => {
     setActiveIndex(index);
