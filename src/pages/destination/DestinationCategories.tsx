@@ -1,0 +1,33 @@
+const DestinationCategories = ({
+  categories,
+  filterItems,
+  handleIsActive,
+  activeIndex,
+}) => {
+  return (
+    <div className="text-white flex gap-10 absolute top-110 left-10">
+      {categories.map((category, index) => {
+        const isActive = index === activeIndex;
+
+        return (
+          <button
+            type="button"
+            key={category}
+            onClick={() => {
+              filterItems(category);
+              handleIsActive(index);
+            }}
+            className={`font-barlow-condensed uppercase tracking-widest pb-2 transition-colors duration-300 ${
+              isActive
+                ? "text-white border-b-2 border-white"
+                : "text-[var(--primary-color)]  border-b-2 border-transparent hover:border-[var(--primary-color)] hover:text-white"
+            }`}
+          >
+            {category.toUpperCase()}
+          </button>
+        );
+      })}
+    </div>
+  );
+};
+export default DestinationCategories;
