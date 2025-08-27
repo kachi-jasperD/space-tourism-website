@@ -5,8 +5,6 @@ import data from "../data/data";
 import DestinationMenu from "@/pages/destination/DestinationMenu";
 import DestinationCategories from "@/pages/destination/DestinationCategories";
 
-
-
 export const Route = createFileRoute("/destination")({
   component: Destination,
 });
@@ -19,16 +17,26 @@ function Destination() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const filterItems = (category: string) => {
+    // if(category==="moon"){
+    //   setMenuItems(newItems);
+    //   return
+    // }
+
     const newItems = data.filter((item) => item.category === category);
+    if (category === "moon") {
+      setMenuItems(newItems);
+      return;
+    }
     setMenuItems(newItems);
   };
+
 
   const handleIsActive = (index: number) => {
     setActiveIndex(index);
   };
 
   useEffect(() => {
-    filterItems(null);
+    filterItems("moon");
   }, []);
 
   return (
