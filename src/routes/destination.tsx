@@ -36,7 +36,7 @@ function Destination() {
   return (
     <div>
       <SharedBackground />
-      <p className="font-barlow-condensed text-white text-center mt-10 ">
+      <p className="font-barlow-condensed text-white text-center mt-10 md:text-left md:ml-5 ">
         <span className="mr-2 text-[#53555f]">01</span> PICK YOUR DESTINATION
       </p>
       <DestinationCategories
