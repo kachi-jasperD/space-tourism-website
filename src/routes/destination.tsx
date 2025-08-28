@@ -13,7 +13,7 @@ const allCategories = data.map((item) => item.category);
 
 function Destination() {
   const [menuItems, setMenuItems] = useState(data);
-  const [categories, setCategories] = useState(allCategories);
+  const [categories] = useState(allCategories);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const filterItems = (category: string) => {

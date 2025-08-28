@@ -1,4 +1,22 @@
-const DestinationMenuItem = ({ id, title, info, distance, time, image }) => {
+type DestinationMenuItemProps = {
+  id: string | number;
+  title: string;
+  info: string;
+  distance: string;
+  time: string;
+  image: string;
+};
+
+// const DestinationMenuItem = ({ id, title, info, distance, time, image }) => {
+//   return (
+const DestinationMenuItem = ({
+  id,
+  title,
+  info,
+  distance,
+  time,
+  image,
+}: DestinationMenuItemProps) => {
   return (
     <>
       <div
