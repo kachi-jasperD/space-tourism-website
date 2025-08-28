@@ -1,4 +1,4 @@
-import DestinationMenuItem from "./DestinationMenuItem";
+import {DestinationMenuItem} from "./";
 
 type DestinationMenuProps = {
   items: {

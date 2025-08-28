@@ -2,8 +2,10 @@ import SharedBackground from "@/pages/SharedBackground";
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import data from "../data/data";
-import DestinationMenu from "@/pages/destination/DestinationMenu";
-import DestinationCategories from "@/pages/destination/DestinationCategories";
+import {
+  DestinationCategories,
+  DestinationMenu,
+} from "@/pages/destination/";
 
 export const Route = createFileRoute("/destination")({
   component: Destination,
