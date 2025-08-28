@@ -7,8 +7,6 @@ type DestinationMenuItemProps = {
   image: string;
 };
 
-// const DestinationMenuItem = ({ id, title, info, distance, time, image }) => {
-//   return (
 const DestinationMenuItem = ({
   id,
   title,
