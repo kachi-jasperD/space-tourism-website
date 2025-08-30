@@ -24,7 +24,7 @@ function Index() {
         </p>
       </div>
 
-      <div className="hidden lg:flex justify-center items-end h-full text-white gap-50 mt-[300px]">
+      <div className="hidden lg:flex justify-center items-end h-full text-white  mt-[250px] gap-55">
         <div className="flex flex-col gap-10">
           <p className="text-[var(--primary-color)] font-barlow-condensed tracking-widest text-2xl">
             SO, YOU WANT TO TRAVEL TO
@@ -38,8 +38,16 @@ function Index() {
           </p>
         </div>
 
-        <div>
-          <p className="font-bellefair bg-white text-[var(--primary-explore-color)] border rounded-full w-50 h-50 flex items-center justify-center mt-15">
+        <div
+          className="rounded-full w-100 h-100 flex items-center justify-center
+                border border-transparent bg-transparent
+                [&:has(.explore:hover)]:bg-white/9 
+                [&:has(.explore:hover)]:border-white/1  transition duration-300"
+        >
+          <p
+            className="explore text-xl font-bellefair bg-white text-[var(--primary-explore-color)]
+                rounded-full w-50 h-50 flex items-center justify-center hover:text-gray-400"
+          >
             EXPLORE
           </p>
         </div>
