@@ -18,10 +18,16 @@ function Index() {
           back, and relax because we’ll give you a truly out of this world
           experience!
         </p>
-
-        <p className="bg-white border rounded-full w-35 h-35 flex items-center justify-center mt-11 font-bellefair text-[var(--primary-explore-color)]">
-          EXPLORE
-        </p>
+        <div
+          className="rounded-full w-80 h-80 flex items-center justify-center
+                border border-transparent bg-transparent
+                [&:has(.explore:hover)]:bg-white/9 
+                [&:has(.explore:hover)]:border-white/1  transition duration-300"
+        >
+          <p className="explore bg-white border rounded-full w-35 h-35 flex items-center justify-center font-bellefair text-[var(--primary-explore-color)] hover:text-gray-400">
+            EXPLORE
+          </p>
+        </div>
       </div>
 
       <div className="hidden lg:flex justify-center items-end h-full text-white  mt-[250px] gap-55">

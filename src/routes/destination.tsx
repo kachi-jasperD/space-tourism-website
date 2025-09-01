@@ -1,7 +1,7 @@
 import SharedBackground from "@/pages/SharedBackground";
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import data from "../data/data";
+import data from "../pages/destination/data/data";
 import {
   DestinationCategories,
   DestinationMenu,
