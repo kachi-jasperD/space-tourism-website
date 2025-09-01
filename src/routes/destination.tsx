@@ -1,11 +1,8 @@
-import SharedBackground from "@/pages/SharedBackground";
+import DestinationBackground from "@/pages/DestinationBackground";
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import data from "../pages/destination/data/data";
-import {
-  DestinationCategories,
-  DestinationMenu,
-} from "@/pages/destination/";
+import { DestinationCategories, DestinationMenu } from "@/pages/destination/";
 
 export const Route = createFileRoute("/destination")({
   component: Destination,
@@ -37,7 +34,7 @@ function Destination() {
 
   return (
     <div>
-      <SharedBackground />
+      <DestinationBackground />
       <p className="font-barlow-condensed text-white text-center mt-10 md:text-left md:ml-5 lg:ml-50 lg:text-3xl lg:tracking-widest ">
         <span className="mr-2 text-[#53555f]">01</span> PICK YOUR DESTINATION
       </p>

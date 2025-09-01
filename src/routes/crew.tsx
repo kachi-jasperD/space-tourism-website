@@ -1,4 +1,4 @@
-import SharedBackground from "@/pages/SharedBackground";
+import CrewBackground from "@/pages/CrewBackground";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/crew")({
@@ -8,7 +8,7 @@ export const Route = createFileRoute("/crew")({
 function RouteComponent() {
   return (
     <div>
-      <SharedBackground />
+      <CrewBackground />
       <p className="text-white">Hi crew Page</p>
     </div>
   );
