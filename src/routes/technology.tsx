@@ -11,18 +11,27 @@ export const Route = createFileRoute("/technology")({
 function Technology() {
   const [spaceShips] = useState(technologies); 
   const [selectedIndex, setSelectedIndex] = useState(0); 
+    const [activeIndex, setActiveIndex] = useState(0);
 
   const filterItems = (id: number) => {
     setSelectedIndex(id);
   };
 
+   const handleIsActive = (index: number) => {
+     setActiveIndex(index);
+   };
   return (
     <div>
       <TechnologyBackground />
       <p className="font-barlow-condensed text-white text-center mt-10 md:text-left md:ml-5 lg:ml-50 lg:text-3xl lg:tracking-widest ">
         <span className="mr-2 text-[#53555f]">03</span> SPACE LAUNCH 101
       </p>
-      <TechnologyCategories items={spaceShips} filterItems={filterItems} />
+      <TechnologyCategories
+        items={spaceShips}
+        filterItems={filterItems}
+        handleIsActive={handleIsActive}
+        activeIndex={activeIndex}
+      />
       <TechnologyMenu item={spaceShips[selectedIndex]} />
     </div>
   );
