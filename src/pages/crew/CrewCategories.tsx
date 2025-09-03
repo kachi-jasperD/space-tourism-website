@@ -6,13 +6,13 @@ type CrewCategoriesProps = {
     info: string;
     image: string;
   }[];
-  // currentItem: number;
+  currentItem: number;
   setCurrentItem: (id: number) => void;
 };
 
 const CrewCategories = ({
   members,
-  // currentItem,
+  currentItem: _currentItem,
   setCurrentItem,
 }: CrewCategoriesProps) => {
   return (

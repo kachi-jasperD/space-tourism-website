@@ -1,11 +1,18 @@
 type CrewMenuItemsProps = {
+  id: string | number;
   title: string;
   name: string;
   info: string;
   image: string;
 };
 
-const CrewMenuItems = ({ title, name, info, image }: CrewMenuItemsProps) => {
+const CrewMenuItems = ({
+  id: _id,
+  title,
+  name,
+  info,
+  image,
+}: CrewMenuItemsProps) => {
   return (
     <>
       <div className="lg:hidden text-white mt-10 flex flex-col justify-center items-center gap-3">
@@ -35,7 +42,11 @@ const CrewMenuItems = ({ title, name, info, image }: CrewMenuItemsProps) => {
         </div>
 
         <div>
-          <img src={image} alt={name} />
+          <img
+            src={image}
+            alt={name}
+            // className="w-[539px] h-[676px]"
+          />
         </div>
       </div>
     </>
