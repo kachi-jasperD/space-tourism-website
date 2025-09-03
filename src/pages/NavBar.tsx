@@ -12,25 +12,27 @@ const NavBar = () => {
           className="border border-white rounded-full mt-2 ml-2"
         />
         {/* nav links always on top */}
-        <div className="hidden md:block space-x-20  pt-5 text-white place relative top-5 z-10">
+        <div className="hidden md:block space-x-20  pt-5 text-white place relative top-5 z-10 font-barlow-condensed">
           <Link to="/" className="[&.active]:font-bold">
-            <span className="mr-2">00</span> Home
+            <span className="mr-2 font-barlow-condensed-bold">00</span> HOME
           </Link>
           <Link to="/destination" className="[&.active]:font-bold">
-            <span className="mr-2">01</span> Destination
+            <span className="mr-2 font-barlow-condensed-bold">01</span>{" "}
+            DESTINATION
           </Link>
           <Link to="/crew" className="[&.active]:font-bold">
-            <span className="mr-2">02</span> Crew
+            <span className="mr-2 font-barlow-condensed-bold">02</span> CREW
           </Link>
           <Link to="/technology" className="[&.active]:font-bold">
-            <span className="mr-2">03</span> Technology
+            <span className="mr-2 font-barlow-condensed-bold">03</span>{" "}
+            TECHNOLOGY
           </Link>
         </div>
       </div>
       {/* background decoration */}
       <div className="flex justify-end items-center absolute top-5 right-0 z-0">
         <div className="lg:w-[560px] border-t border-white/25 relative left-10"></div>
-        <div className="lg:w-[736px] h-[96px] bg-white/5"></div>
+        <div className="md:w-[640px] md:h-[92px] lg:w-[736px] lg:h-[96px] bg-white/5"></div>
       </div>
     </div>
   );

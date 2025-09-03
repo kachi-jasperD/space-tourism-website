@@ -10,6 +10,10 @@
   font-family: Barlow-Condensed;
   src: url("../public/font/Barlow_Condensed/BarlowCondensed-Regular.ttf");
 }
+@font-face {
+  font-family: Barlow-Condensed-Bold;
+  src: url("../public/font/Barlow_Condensed/BarlowCondensed-Bold.ttf");
+}
 
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -20,6 +24,7 @@
   --font-bellefair: Bellefair, "sans-serif";
   --font-barlow-regular: Barlow-Regular, "sans-serif";
   --font-barlow-condensed: Barlow-Condensed, "sans-serif";
+  --font-barlow-condensed-bold: Barlow-Condensed-Bold, "sans-serif";
 }
 
 @theme inline {
