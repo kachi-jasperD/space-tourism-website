@@ -3,6 +3,7 @@ import TechnologyBackground from "@/pages/TechnologyBackground";
 import { createFileRoute } from "@tanstack/react-router";
 import technologies from "@/pages/technology/data/data";
 import { TechnologyCategories, TechnologyMenu } from "@/pages/technology/";
+import Title from "@/pages/Title";
 
 export const Route = createFileRoute("/technology")({
   component: Technology,
@@ -23,9 +24,7 @@ function Technology() {
   return (
     <div>
       <TechnologyBackground />
-      <p className="font-barlow-condensed text-white text-center mt-10 md:text-left md:ml-5 lg:ml-50 lg:text-3xl lg:tracking-widest ">
-        <span className="mr-2 text-[#53555f]">03</span> SPACE LAUNCH 101
-      </p>
+      <Title number="03" title="SPACE LAUNCH 101" />
       <TechnologyCategories
         items={spaceShips}
         filterItems={filterItems}

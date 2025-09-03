@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import data from "../pages/destination/data/data";
 import { DestinationCategories, DestinationMenu } from "@/pages/destination/";
+import Title from "@/pages/Title";
 
 export const Route = createFileRoute("/destination")({
   component: Destination,
@@ -35,9 +36,7 @@ function Destination() {
   return (
     <div>
       <DestinationBackground />
-      <p className="font-barlow-condensed text-white text-center mt-10 md:text-left md:ml-5 lg:ml-50 lg:text-3xl lg:tracking-widest ">
-        <span className="mr-2 text-[#53555f]">01</span> PICK YOUR DESTINATION
-      </p>
+      <Title number="01" title="PICK YOUR DESTINATION" />
       <DestinationCategories
         categories={categories}
         filterItems={filterItems}

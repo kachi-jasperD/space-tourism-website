@@ -10,7 +10,7 @@ const NavBar = () => {
           alt="Logo"
           className="border border-white rounded-full mt-2 ml-2"
         />
-        <div className="hidden md:block space-x-10 pt-5 text-white">
+        <div className="hidden md:block space-x-10 pt-5 text-white border border-amber-300 ">
           <Link to="/" className="[&.active]:font-bold">
             <span className="mr-2">00</span> Home
           </Link>

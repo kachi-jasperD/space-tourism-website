@@ -21,7 +21,7 @@ const TechnologyMenuItems = ({
       >
         <img src={landscapeImage} alt="Image of the Moon" className="w-full" />
 
-        <p className="font-bellefair text-xl md:text-3xl mt-25">
+        <p className="font-bellefair text-xl md:text-3xl mt-25 text-white/30">
           THE TERMINOLOGY…
         </p>
         <p className="font-bellefair text-3xl md:text-6xl ">{title}</p>
@@ -35,10 +35,10 @@ const TechnologyMenuItems = ({
         key={id}
       >
         <div>
-          <p className="font-bellefair text-4xl mt-5">
+          <p className="font-bellefair text-4xl mt-5 text-white/30">
             THE TERMINOLOGY…
           </p>
-          <p className="font-bellefair text-7xl  mt-5 ">{title}</p>
+          <p className="font-bellefair text-7xl  mt-5 text-white/90">{title}</p>
           <p className="font-barlow-regular tracking-wide text-left pt-7  pb-9 text-wrap w-[405px] text-[var(--primary-color)]">
             {info}
           </p>
