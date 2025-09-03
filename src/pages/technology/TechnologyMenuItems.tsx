@@ -13,6 +13,7 @@ const TechnologyMenuItems = ({
   landscapeImage,
   portraitImage,
 }: TechnologyMenuItemsProps) => {
+  
   return (
     <>
       <div
