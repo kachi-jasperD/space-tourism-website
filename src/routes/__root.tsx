@@ -41,7 +41,7 @@ function RootComponent() {
       {/* Side Menu Drawer */}
       {isOpen && (
         <div className="fixed inset-0 bg-black/60 z-40 md:hidden">
-          <div className="absolute top-0 right-0 h-full w-2/3 bg-[#0B0D17] p-6 flex flex-col text-white">
+          <div className="absolute top-0 right-0 h-full w-2/3 bg-[#2c2d2f]/5 p-6 flex flex-col text-white backdrop-blur-sm">
             {/* Close button */}
             <button className="self-end mb-10" onClick={() => setIsOpen(false)}>
               <img src={close} alt="Close menu" />
